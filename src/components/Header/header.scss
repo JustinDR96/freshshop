@@ -1,4 +1,142 @@
 .header {
+  min-height: 200px;
+}
+
+.navbar-top {
+  position: absolute;
+  top: 0;
+  width: 100%;
   height: 50px;
-  border: solid 1px green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  .user-info {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    select {
+      border: none;
+      background-color: #b0b435;
+      padding: 5px;
+      color: rgb(253, 240, 240);
+    }
+    .info-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      li {
+        a {
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          transition: all 0.2s ease-in-out;
+        }
+        a:hover {
+          path {
+            fill: #b0b435;
+          }
+          color: #b0b435;
+        }
+      }
+    }
+  }
+  .fade {
+    animation: fade 6s infinite;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .account {
+    select {
+      border: none;
+      background-color: #b0b435;
+      padding: 5px;
+      color: rgb(253, 240, 240);
+    }
+  }
+}
+
+.navbar-bottom {
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  .navbar-links {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-weight: bold;
+      .link {
+        color: black;
+        text-decoration: none;
+        border: none;
+        background: none;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+      .link:hover {
+        color: #b0b435;
+      }
+    }
+  }
+  .navbar-icon {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .navbar-search {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      svg {
+        transition: all 0.2s ease-in-out;
+      }
+      svg:hover {
+        fill: #b0b435;
+      }
+    }
+
+    .navbar-cart {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      path {
+        transition: all 0.2s ease-in-out;
+      }
+    }
+    .navbar-cart:hover {
+      color: #b0b435;
+      path {
+        fill: #b0b435;
+      }
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }

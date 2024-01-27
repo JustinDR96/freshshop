@@ -8,8 +8,8 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Fresh Shop",
-  description: "The best fresh fruits and vegetables online."
+  title: "FreshShop - Ecommerce",
+  description: "The best fresh fruits and vegetables online.",
 };
 
 export default function RootLayout({
@@ -19,9 +19,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+      <Head>
+        <link rel="icon" href="public/favicon.ico" />
       </Head>
       <body className={inter.className}>
         <Header />

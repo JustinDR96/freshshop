@@ -6,9 +6,13 @@
 @import "./helpers/variables";
 
 // Importer les styles des composants
-@import "../components/Header/Header.scss";
+@import "../components/Header/header.scss";
 @import "../components/Footer/Footer.scss";
+
+
 // Importer les styles spécifiques aux pages
+@import "../app/home.scss";
+
 
 // Importer les styles globaux
 @import "./App";

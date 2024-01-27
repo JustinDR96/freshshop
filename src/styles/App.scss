@@ -10,4 +10,6 @@ html {
   min-height: 100vh;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
+  overflow: auto;
+  overflow-x: hidden;
 }
